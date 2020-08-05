@@ -1,0 +1,98 @@
+html {
+  overflow: hidden;
+  
+}
+body {
+  
+}
+th, td {    
+    height: 2rem;
+    vertical-align: middle;
+    text-align: center;
+    width: 15vw;
+}
+table {
+    width: 80vw;
+    table-layout: fixed;
+    margin: 0 auto;
+    
+}
+tbody {
+    display: block;
+    width: 100%;
+    overflow: auto;    
+    height: 30vh;
+}
+thead {
+    display: block;
+    background-color: lightblue;
+}
+nav {
+  padding: 1.5rem;
+  display: flex;
+  width: 100vw;
+  background-color: olive;   
+  justify-content: space-between;
+}
+
+/*modale*/
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  background-color: lightblue;
+  z-index: 2;
+  transition: (2, ease);
+  visibility: hidden;
+  opacity: 0;
+
+}
+
+form {
+
+}
+.form-row {
+  
+}
+.modal-message {
+  margin: 1rem;
+  text-align: center;
+}
+.form-row::after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+.col-left {
+  float: left;
+  margin: 0.5rem;
+  padding: 0.2rem;
+}
+.col-right {
+  float: right;
+  margin: 0.5rem;
+}
+select {
+  text-align-last: center;
+}
+.shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  content: " ";  
+  background-color:  rgba(0,0,0, .2);
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+}
+.js-visible {
+  visibility: visible;
+  opacity: 1;
+}
+.remove-btn {
+  
+}

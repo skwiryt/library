@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="library.css">
+        <script type="text/javascript" src="library.js"></script>
+    </head>
+    <body>
+        <nav>
+            <div class="logo">Virtual Library</div>
+            <button id="add-btn" type="button">Add new book</button>
+        </nav>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Status</th>
+                    <th></th>
+                </tr>   
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1984</td>
+                    <td>Orwell</td>
+                    <td>123</td>
+                    <td>Read</td>
+                    <td><button class="remove-btn" type="button">Remove</button></td>
+                </tr>               
+
+
+            </tbody>
+        </table>
+
+        <div class="modal add-modal" id="add-modal">
+            <div class="modal-message">Fill up the form and add the new book.</div>
+            <form id="add-form">
+                <div class="form-row">
+                    <label class="col-left" for="title">Title:</label>
+                    <input class="col-right" type="text" id="title" name="title" placeholder="enter the title">
+                </div>
+                <div class="form-row">
+                    <label class="col-left" for="author">Author:</label>
+                    <input class="col-right" type="text" id="author" name="author" placeholder="enter the author">
+                </div>
+                <div class="form-row">
+                    <label class="col-left" for="pagesNb">Nb of pages:</label>
+                    <input class="col-right" id="pagesNb" name="pagesNb">
+                </div>
+                <div class="form-row">
+                    <label class="col-left" for="status">Status:</label>
+                    <select class="col-right" id="status" name="status">
+                        <option value="" selected disabled>Is it read?</option>
+                        <option value="read">Already read</option>
+                        <option value="not read">Not read yet</option>
+                    </select>
+                </div>
+                <br>
+                
+                <div class="form-row">
+                    <button type="button" id="cancel-add-btn" class="col-left">Cancel</button>
+                    <button type="submit" class="col-right">Add this book</button>
+                </div>
+                
+            </form>
+            
+        </div>
+        <div class="modal remove-modal" id="remove-modal">
+            <div class="modal-message">You are going to remove following book from library.</div>
+            <form id="remove-form">
+                <div class="form-row">
+                    <label class="col-left" for="title">Title:</label>
+                    <input class="col-right" type="text" id="title" name="title" placeholder="enter the title">
+                </div>
+                <div class="form-row">
+                    <label class="col-left" for="author">Author:</label>
+                    <input class="col-right" type="text" id="author" name="author" placeholder="enter the author">
+                </div>
+                <div class="form-row">
+                    <label class="col-left" for="pagesNb">Nb of pages:</label>
+                    <input class="col-right" id="pagesNb" name="pagesNb">
+                </div>
+                
+                <br>
+                
+                <div class="form-row">
+                    <button type="button" id="cancel-remove-btn" class="col-left">Back</button>
+                    <button type="submit" class="col-right">Remove this book</button>
+                </div>                
+            </form>            
+        </div>
+        <div class="modal status-modal" id="status-modal">
+            <div class="modal-message">You will change actual status of the book:</div>
+            <form id="status-form">
+                <div class="form-row">
+                    <label class="col-left" for="title">Title:</label>
+                    <input class="col-right" type="text" id="title" name="title" placeholder="enter the title">
+                </div>
+                <div class="form-row">
+                    <label class="col-left" for="author">Author:</label>
+                    <input class="col-right" type="text" id="author" name="author" placeholder="enter the author">
+                </div>
+                <div class="form-row">
+                    <label class="col-left" for="pagesNb">Nb of pages:</label>
+                    <input class="col-right" id="pagesNb" name="pagesNb">
+                </div>
+                <div class="form-row">
+                    <label class="col-left" for="status">Actual status:</label>
+                    <select class="col-right" id="status" name="status">
+                        <option value="" selected disabled>Is it read?</option>
+                        <option value="read">Already read</option>
+                        <option value="not read">Not read yet</option>
+                    </select>
+                </div>
+                <br>
+                
+                <div class="form-row">
+                    <button type="button" id="cancel-status-btn" class="col-left">Back</button>
+                    <button type="submit" class="col-right">Confirm</button>
+                </div>                
+            </form>            
+        </div>
+        <div class="shadow">  </div>
+
+
+    </body>
+    
+
+</html>
