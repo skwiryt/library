@@ -3,44 +3,99 @@ html {
   
 }
 body {
-  
+  height: 100vh;
+  font-size: 18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgb(156, 156, 45);
+  color: rgb(36, 61, 61);
+  background-image: linear-gradient(rgba(94, 94, 26, 0.7),80%, rgb(156,156,45, 0.2)),
+                    url(patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg);
+  background-repeat: no-repeat,
+                    round;
+}
+b {
+  font-weight: bold;
 }
 th, td {    
-    height: 2rem;
+    padding: 8px 8px;
     vertical-align: middle;
     text-align: center;
-    width: 15vw;
+    min-width: 13vw;    
 }
-table {
+th {
+  height: 3rem;  
+}
+.title-cell {
+  width: 31vw;
+}
+.author-cell {
+  width: 30vw;  
+}
+tbody {
+  background-color: rgb(156, 156, 45);
+}
+tbody tr {    
+    border-bottom: solid 1px olive;
+}
+table {  
+    border-collapse: collapse;
     width: 80vw;
     table-layout: fixed;
     margin: 0 auto;
+    border: solid 1px lightblue;
+
     
+}
+button {
+  border: none;
+}
+button:hover {
+  outline: solid darkgray 2px;
+  box-shadow: darkolivegreen 3px 3px;
+}
+table button {
+  background-color: rgb(189, 219, 230);
+  padding: 6px;
 }
 tbody {
     display: block;
     width: 100%;
     overflow: auto;    
-    height: 30vh;
+    min-height: 30vh;
+    max-height: 60vh;
+    color: rgb(22, 37, 37);;
 }
 thead {
     display: block;
     background-color: lightblue;
 }
 nav {
-  padding: 1.5rem;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
   display: flex;
   width: 100vw;
   background-color: olive;   
   justify-content: space-between;
 }
-
+nav button {
+  background-color: rgb(104, 104, 6);
+  color: rgb(253, 192, 78);
+  text-shadow: black 1px 1px;
+}
+.logo {
+  font-family: "Pacifico", cursive;
+  font-size: 2.5rem;
+  color: orange;
+  text-shadow: rgb(109, 70, 32) 3px 1px;
+}
 /*modale*/
 .modal {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  box-shadow: rgb(104, 104, 6) 3px 3px;
+  border: rgb(104, 104, 6) 1px;
+  border-radius: 1px;
   padding: 1rem;
   background-color: lightblue;
   z-index: 2;
@@ -50,15 +105,11 @@ nav {
 
 }
 
-form {
-
-}
-.form-row {
-  
-}
 .modal-message {
   margin: 1rem;
   text-align: center;
+  border-bottom: solid rgb(104, 104, 6) 1px;
+  padding-bottom: 0.5rem;
 }
 .form-row::after {
   content: ' ';
@@ -67,16 +118,31 @@ form {
 }
 .col-left {
   float: left;
-  margin: 0.5rem;
-  padding: 0.2rem;
+  margin: 0.5rem;  
 }
 .col-right {
   float: right;
   margin: 0.5rem;
 }
+form input{
+  font-size: 1rem;
+  border: none;
+  padding: 2px;
+  background-color: rgb(194, 229, 241);
+}
+form  button{
+  font-size: 1rem;
+  padding: .5rem;
+  background-color:  rgb(129, 129, 39);
+  color: rgb(252, 203, 112);
+  text-shadow: rgb(46, 46, 46) 1px 1px;
+}
 select {
   text-align-last: center;
+  font-size: .9rem;
+  background-color: rgb(194, 229, 241);
 }
+
 .shadow {
   position: fixed;
   top: 0;
@@ -92,7 +158,4 @@ select {
 .js-visible {
   visibility: visible;
   opacity: 1;
-}
-.remove-btn {
-  
 }
