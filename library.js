@@ -1,8 +1,18 @@
+/*
 function Book(title, author, pagesNb, isRead){    
     this.title = title;
     this.author = author;
     this.pagesNb = pagesNb;
     this.isRead = isRead;         
+}
+*/
+class Book {
+    constructor(title, author, pagesNb, isRead) {
+        this.title = title;
+        this.author = author;
+        this.pagesNb = pagesNb;
+        this.isRead = isRead;   
+    }     
 }
 let store = [
     {title: "1984", author: "George Orwell", pagesNb: 360, isRead: true},
