@@ -100,7 +100,7 @@ function showModal(purpose) {
             break;
         case "status-modal":
             action = "updateInStore"
-            modalMessage = "You will change actual status of the book."
+            modalMessage = "You may change actual status of the book."
             break;
     };
     let messageDiv = modal.querySelector(".modal-message");
